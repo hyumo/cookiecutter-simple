@@ -21,8 +21,8 @@ check: ## Run code quality tools.
 .PHONY: test
 test: ## Test the code with pytest
 	@echo "🚀 Testing code: Running pytest"
-	@run pytest --cov --cov-config=pyproject.toml --cov-report=xml
-	@run pytest --doctest-modules
+	@pytest --cov --cov-config=pyproject.toml --cov-report=xml
+	@pytest --doctest-modules
 
 .PHONY: build
 build: clean-build ## Build wheel file using poetry
