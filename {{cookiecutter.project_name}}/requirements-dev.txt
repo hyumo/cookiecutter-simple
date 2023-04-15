@@ -1,0 +1,11 @@
+-r requirements.txt
+pytest
+pytest-cov
+deptry
+mypy
+black
+ruff
+mkdocs
+mkdocs-material
+mkdocs-material-extensions
+mkdocstrings[python]
